@@ -13,7 +13,7 @@
 		font-size: 6em;
 		font-weight: 900;
 		letter-spacing: -3px;
-		margin: 0 0 10px;
+		margin: 0 0 20px;
 		text-align: left;
 		text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
 	}
@@ -152,6 +152,7 @@
 		color:#666;
 		position: relative;
 		bottom: 70px;
+		right: 60px;
 		
 	}
 	.tfbutton2 {
@@ -172,6 +173,7 @@
 		border-bottom-right-radius: 5px 5px;
 		position: relative;
 		bottom: 70px;
+		right: 60px;
 	}
 	.tfbutton2:hover {
 		text-decoration: none;
