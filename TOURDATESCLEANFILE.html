@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>Maroon 5 Tour</title>
+		<link href="../css/global-demo.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background: url(../images/noise_light-grey.jpg);
+				font-family: 'Helvetica Neue', arial, sans-serif;
+				font-weight: 300;
+				background-color: #ffffff;
+				background-image:url(http://www.maroon5.com/sites/g/files/g20002711/f/201407/tour-desktop.min_.jpg);
+				background-position: top center;
+			}
+			<!-- this is where we added the pic for the background -->
+			#container {
+				width: 940px;
+				margin: 0 auto;
+			}
+			
+			h1 {
+				font-family: 'Oswald', sans-serif;
+				font-size: 4em;
+				font-weight: 400;
+				margin: 0 0 20px;
+				text-align: center;
+				text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+			}
+			
+			h2 {
+				font-family: 'Oswald', sans-serif;
+				font-size: 2em;
+				font-weight: 700;
+				letter-spacing: -1px;
+				margin: 0 0 20px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			
+			hr {
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #fff;
+				margin: 25px 0;
+				clear: both;
+			}
+			
+			.centered {
+				text-align: center;
+			}
+			
+			.wrapper {
+				width: 100%;
+				padding: 30px 0;
+			}
+			
+			.container {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			
+			.table-container {
+				padding: 20px;
+				margin: 0 0 20px;
+				background: #fff;
+				box-shadow: 0 0 5px #ddd;
+			}
+			
+			<!-- responsive tables -->
+			.responsive-stacked-table {
+				width: 100%;
+				border: 1px solid #ddd;
+				border-collapse: collapse;
+				table-layout: fixed;
+			}
+			
+			.responsive-stacked-table th,
+			.responsive-stacked-table td {
+				padding: 10px;
+				border-top: 1px solid #ddd;
+			}
+			
+			.responsive-stacked-table thead {
+				background: #eee;
+				border-bottom: 3px solid #ddd;
+			}
+			
+			.responsive-stacked-table tr:nth-child(even) {
+				background: #f5f5f5;
+			}
+			
+			.responsive-stacked-table .fa {
+				margin-right: 5px;
+			}
+			
+			.responsive-stacked-table .fa-check-circle {
+				color: #690;
+			}
+			
+			.responsive-stacked-table .fa-times-circle {
+				color: #c00;
+			}
+			
+			.responsive-stacked-table.with-mobile-labels {
+				font-size: .85em;
+			}
+
+			@media (max-width: 1199px) {
+				.container {
+					width: auto;
+					padding: 0 10px;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.responsive-stacked-table thead {
+					display: none;
+				}
+				.responsive-stacked-table tr,
+				.responsive-stacked-table th,
+				.responsive-stacked-table td {
+					display: block;
+				}
+				
+				.responsive-stacked-table td {
+					border-top: none;
+				}
+				
+				.responsive-stacked-table tr td:first-child {
+					border-top: 1px solid #ddd;
+					font-weight: bold;
+				}
+				
+				
+				.responsive-stacked-table.with-mobile-labels tr td:first-child {
+					font-weight: 300;
+				}
+				
+				.responsive-stacked-table.with-mobile-labels td:before {
+					display: block;
+					font-weight: bold;
+				}
+				
+				.responsive-stacked-table.with-mobile-labels td:nth-of-type(1):before {
+					content: "Product:";
+				}
+				
+				.responsive-stacked-table.with-mobile-labels td:nth-of-type(2):before {
+					content: "Processor:";
+				}
+				
+				.responsive-stacked-table.with-mobile-labels td:nth-of-type(3):before {
+					content: "Memory:";
+				}
+				
+				.responsive-stacked-table.with-mobile-labels td:nth-of-type(4):before {
+					content: "Hard Drive:";
+				}
+				
+				.responsive-stacked-table.with-mobile-labels td:nth-of-type(5):before {
+					content: "Graphics Card:";
+				}
+			}
+			#j{ 
+				width:3%
+			}
+			<!-- style for nav bar -->
+			#nav {
+			  background-color: #222;
+			  position: fixed;
+			  width: 100%;
+			  top: 0px;
+			  font-size: 20px;
+			}
+			#nav-wrapper {
+			  width: 90%;
+			  margin: 0px auto;
+			  text-align: left;
+			}
+			#nav ul {
+			  list-style-type: none;
+			  padding: 0px;
+			  margin: 0px;
+			}
+			#nav ul li {
+			  display: inline-block;
+			}
+			#nav ul li:hover {
+			  background-color: #333;
+			}
+			#nav ul li a,
+			visited {
+			  display: block;
+			  padding: 20px;
+			  color: #CCC;
+			  text-decoration: none;
+			}
+		</style> 
+	</head>
+	<body>
+		<!-- navigation bar -->
+		<div id="nav">
+			<div id="nav-wrapper">
+				<ul>
+					<li><a href="index.html">FloorSeats</a>
+					</li>
+					<li><a href="TOURDATESCLEANFILE.html">Full Tour</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="container">
+				<h1>
+					<font color="white">Maroon 5 Tour</font>
+				</h1>
+				
+				<div class="table-container">
+					<h2> 2015 Tour Dates</h2>
+					<table class="responsive-stacked-table">
+						<thead>
+							<tr>
+							<!-- these are the rows -->
+								<th>Date</th>
+								<th>Time</th>
+								<th>Location</th>
+								<th>Venue</th>
+								<th>Opening Act</th>
+								<th>Price Range</th>
+								<th id="j"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							<!-- information that goes in the rows -->
+								<td><font color="red">August 8 2015</font></td>
+								<td><font color="red">7:00 PM</font></td>
+								<td><font color="red">New York, NY</font></td>
+								<td><font color="red">Madison Square Garden</font></td>
+								<td><font color="red">Nick Jonas, Ke$ha</font></td>
+								<td><font color="red">$27-583</font><form method="get" action="http://google.com"> </td>
+								<td>	
+									<button type="http://buckiethistle.org/wp-content/uploads/2014/06/ticket1.jpg"><img src="http://i.imgur.com/JtjhGlt.png"style="width:20px;height:14px;"></button>
+									</form>	
+								</td>
+							</tr>
+							
+							<tr>
+								<td><font color="red">August 9 2015</font></td>
+								<td><font color="red">8:00 PM</font></td>
+								<td><font color="red">Patterson, NJ</font></td>
+								<td><font color="red">Metlife Stadium</font></td>
+								<td><font color="red">Nick Jonas, Magic!</font></td>
+								<td><font color="red">$56-853</font><form method="get" action="http://google.com"></td>
+								<td>	
+									<button type="http://buckiethistle.org/wp-content/uploads/2014/06/ticket1.jpg"><img src="http://i.imgur.com/JtjhGlt.png"style="width:20px;height:14px;"></button>
+									</form>
+								</td>
+								</tr>
+								
+							<tr>
+								<td><font color="red">August 11 2015</font></td>
+								<td><font color="red">7:30 PM</font></td>
+								<td><font color="red">Philadelphia, PA</font></td>
+								<td><font color="red">Festival Pier</font></td>
+								<td><font color="red">Beyonce, The Weeknd</font></td>
+								<td><font color="red">$49-1039</font><form method="get" action="http://google.com"></td>
+								<td>	
+									<button type="http://buckiethistle.org/wp-content/uploads/2014/06/ticket1.jpg"><img src="http://i.imgur.com/JtjhGlt.png"style="width:20px;height:14px;"></button>
+									</form>
+								</td>								
+							</tr>
+							
+							<tr>
+								<td>August 15 2015</td>
+								<td>7:00 PM</td>
+								<td>Hershey, PA</td>
+								<td> Hershey Park Stadium</td>
+								<td> Nick Jonas, Matt McAndrew</td>
+								<td>$47-157<form method="get" action="M5tix.html"></td>
+								<td>	
+									<button type="http://buckiethistle.org/wp-content/uploads/2014/06/ticket1.jpg"><img src="http://i.imgur.com/InnCAFg.png?1"style="width:20px;height:14px;"></button>
+									</form>
+								</td>	
+							</tr>
+							
+							<tr>
+								<td>August 16 2015</td>
+								<td>8:00 PM</td>
+								<td>Washington, DC</td>
+								<td> Verizon Center</td>
+								<td>The Weeknd, Drake</td>
+								<td>$42-3535<form method="get" action="http://google.com"></td>
+								<td>	
+									<button type="http://buckiethistle.org/wp-content/uploads/2014/06/ticket1.jpg"><img src="http://i.imgur.com/InnCAFg.png?1"style="width:20px;height:14px;"></button>
+									</form>
+								</td>
+								</tr>
+								
+							<tr>
+								<td> August 19 2015</td>
+								<td>7:30 PM</td>
+								<td>Boston, MA</td>
+								<td>TD Garden</td>
+								<td> Katy Perry, Magic!</td>
+								<td>$53-4342<form method="get" action="http://google.com"></td>
+								<td>	
+									<button type="http://buckiethistle.org/wp-content/uploads/2014/06/ticket1.jpg"><img src="http://i.imgur.com/InnCAFg.png?1"style="width:20px;height:14px;"></button>
+									</form>
+								</td>
+							</tr>
+							
+							<tr>
+								<td> August 22 2015</td>
+								<td>7:00 PM</td>
+								<td>Hardford, CT</td>
+								<td>XFinity Theatre</td>
+								<td> Nick Jonas, Magic!</td>
+								<td>$28-535<form method="get" action="http://google.com"></td>
+								<td>	
+									<button type="http://buckiethistle.org/wp-content/uploads/2014/06/ticket1.jpg"><img src="http://i.imgur.com/InnCAFg.png?1"style="width:20px;height:14px;"></button>
+									</form>
+								</td>
+							</tr>	
+							<!-- information ends -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

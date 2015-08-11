@@ -1,0 +1,218 @@
+/* INDEX STYLE */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background: url(../images/texture_subtle_grunge.jpg);
+		font-family: 'Helvetica Neue', arial, sans-serif;
+		font-weight: 200;
+	}
+	h2 {
+		font-family: 'font-family: 'Source Sans Pro', sans-serif;', sans-serif;
+		font-size: 6em;
+		font-weight: 900;
+		letter-spacing: -3px;
+		margin: 0 0 10px;
+		text-align: left;
+		text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+	}
+	h1 {
+		font-family: 'font-family: 'Source Sans Pro', sans-serif;', sans-serif;
+		font-size: 3em;
+		font-weight: 900;
+		letter-spacing: -3px;
+		margin: 0 0 20px;
+		text-align: left;
+		text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+	}
+	hr {
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #fff;
+		margin: 25px 0;
+		clear: both;
+	}
+	.centered {
+		text-align: center;
+	}
+	.wrapper {
+		width: 100%;
+		padding: 30px 0;
+	}
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	/* ---------- Zoom container ---------- */
+	.image-zoom-container {
+		list-style: none;
+		font-size: 0px;
+	}
+	.zoom-container {
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		width: 33.33%; /* this value + 2 should = 33% */
+		font-size: 16px;
+		font-size: 1rem;
+		border: 1px solid #fff;
+		vertical-align: top;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	.zoom-container img {
+		display: block;
+		width: 100%;
+		height: auto;
+		-webkit-transition: all .5s ease; /* Safari and Chrome */
+		-moz-transition: all .5s ease; /* Firefox */
+		-ms-transition: all .5s ease; /* IE 9 */
+		-o-transition: all .5s ease; /* Opera */
+		transition: all .5s ease;
+	}
+	.zoom-container .zoom-caption {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		background: rgba(0, 0, 0, .5);
+		-webkit-transition: all .5s ease; /* Safari and Chrome */
+		-moz-transition: all .5s ease; /* Firefox */
+		-ms-transition: all .5s ease; /* IE 9 */
+		-o-transition: all .5s ease; /* Opera */
+		transition: all .5s ease;
+	}
+	.zoom-container .zoom-caption h3 {
+		display: block;
+		text-align: center;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.5em;
+		font-weight: 900;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		color: #fff;
+		margin: 23% 0 0;
+		padding: 10px 0;
+		border-top: 5px solid rgba(255, 255, 255, .15);
+		border-bottom: 5px solid rgba(255, 255, 255, .15);
+	}
+	.zoom-container:hover img {
+		-webkit-transform:scale(1.25); /* Safari and Chrome */
+		-moz-transform:scale(1.25); /* Firefox */
+		-ms-transform:scale(1.25); /* IE 9 */
+		-o-transform:scale(1.25); /* Opera */
+		 transform:scale(1.25);
+	}
+	.zoom-container:hover .zoom-caption {
+		background: none;
+	}
+
+	@media (max-width: 1199px) {
+		.container {
+			width: auto;
+			padding: 0 10px;
+		}
+	}
+
+	@media (max-width: 767px) {
+
+		.zoom-container {
+			width: 50%;
+		}
+
+	}
+
+	@media (max-width: 480px) {
+		
+		.zoom-container {
+			width: 100%;
+		}
+		
+	}
+		
+	/* CSS for SEARCH BAR */
+	 #tfnewsearch{
+	text-align: right;
+	padding:20px;
+	} 
+	.tftextinput2{
+		background: #333;
+		border: solid 1px #222;
+		border-right: 0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+		margin: 0px;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:20px;
+		color:#666;
+		position: relative;
+		bottom: 70px;
+		
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:20px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #666;
+		border: solid 1px #222;
+		border-left: 0px;
+		background: #333;
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		position: relative;
+		bottom: 70px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+		background: #B8B8B8;
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+	
+	/* NAV BAR */
+	 #nav {
+      background-color: #222;
+      width: 100%;
+      top: 0px;
+	  font-size: 20px;
+    }
+    #nav-wrapper {
+      width: 90%;
+      margin: 0px auto;
+      text-align: left;
+    }
+    #nav ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+    }
+    #nav ul li {
+      display: inline-block;
+    }
+    #nav ul li:hover {
+      background-color: #333;
+    }
+    #nav ul li a,
+    visited {
+      display: block;
+      padding: 25px;
+      color: #CCC;
+      text-decoration: none;
+    }
+	
